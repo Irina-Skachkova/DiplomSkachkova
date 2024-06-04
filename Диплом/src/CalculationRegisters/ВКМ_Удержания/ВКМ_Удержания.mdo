@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05552b9e-2c9b-4ec5-8721-42ff0c1b4e5d">
+  <producedTypes>
+    <selectionType typeId="7af70b52-17be-4613-83d4-b01de432780a" valueTypeId="9eacb7bc-83a2-410c-956d-63fef530396f"/>
+    <listType typeId="de0d14a6-e884-475e-9d9b-a58c87c6fb66" valueTypeId="4149980b-8a65-447b-8ae1-4baa046cbeef"/>
+    <managerType typeId="33348b3f-65ce-44c5-b609-57ef8fd7dc4e" valueTypeId="ddcff40c-fe1b-41f1-820b-53ba31f05393"/>
+    <recordSetType typeId="2b0f5c25-c5fb-41cd-ab76-6f38c5b673c5" valueTypeId="0024bcc8-da05-4580-a9e4-7c74499049af"/>
+    <recordKeyType typeId="81f9b643-8d2f-4016-a62f-81b9e43fea00" valueTypeId="fe977aa5-de11-4228-b562-2fd094c9998e"/>
+    <recordType typeId="239d1085-a450-45f6-b10d-5a204408a13a" valueTypeId="0d4161f4-24f2-4afa-ba5b-1e74036c6c79"/>
+    <recalcsType typeId="6d01a870-960c-4cee-97b5-2439b763978e" valueTypeId="34072d7b-6a2e-4519-920b-c11e82e2e961"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2ae232f4-fd57-4965-b641-283709444bb2">
+    <name>НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДФЛ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b2d75c80-1333-49f3-92bc-1bcca4f056e6">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
